@@ -9,7 +9,6 @@ const availableNotes = [2000, 500, 100, 20, 10, 1];
 checkBtn.addEventListener("click", function validateBillAndCashAmount() {
     const billAmt = Number(billAmount.value);
     const cashAmt = Number(cashGiven.value);
-    console.log(billAmount.value);
     hideMsg();
     if (billAmount.value > 0) {
         if (cashGiven.value >= billAmount.value) {
