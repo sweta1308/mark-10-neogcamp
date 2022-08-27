@@ -1,12 +1,12 @@
 const billAmount = document.querySelector("#bill-amount");
 const cashGiven = document.querySelector("#cash-given");
 const checkBtn = document.querySelector("#check-btn");
-const errorMsg =document.querySelector("#error-message");
+const errorMsg = document.querySelector("#error-message");
 const noOfNotes = document.querySelectorAll("#no-of-notes");
 
 const availableNotes = [2000, 500, 100, 20, 10, 1];
 
-checkBtn.addEventListener("clcik", function validateBillAndCashAmount() {
+checkBtn.addEventListener("click", function validateBillAndCashAmount() {
     hideMsg();
     if (billAmount.value > 0) {
         if (cashGiven.value >= billAmount.value) {
@@ -16,7 +16,7 @@ checkBtn.addEventListener("clcik", function validateBillAndCashAmount() {
             showMsg("Cash given should be greater than or equal to the bill amount.");
         }
     }   else {
-        showMsg("Invalid Bill Amount")
+        showMsg("Invalid Bill Amount");
     }
 });
 
