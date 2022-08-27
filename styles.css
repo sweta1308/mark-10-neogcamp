@@ -55,6 +55,7 @@ button {
 table {
     margin: auto;
     border-color: var(--primary-color);
+    padding-bottom: 2rem;
 }
 
 caption {
@@ -67,8 +68,33 @@ caption {
 th,
 td {
   border: 2px solid var(--primary-color);
-  padding: 1rem;
+  padding: 0.7rem;
   border-radius: 1rem;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    padding: 1rem 0rem;
+    text-align: center;
+    color: white;
+    border-radius: 1rem;
+}
+
+
+.footer .link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .footer-header {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.footer li {
+    display: inline;
+    padding: 1rem;
+    text-align: center;
 }
 
 
