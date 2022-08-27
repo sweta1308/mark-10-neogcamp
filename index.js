@@ -6,7 +6,7 @@ const noOfNotes = document.querySelectorAll("#no-of-notes");
 
 const availableNotes = [2000, 500, 100, 20, 10, 1];
 
-checkBtn.addEventListener("click", function validateBillAndCashAmount() {
+checkBtn.addEventListener("click", function validateBillAndCashAmouunt() {
     hideMsg();
     if (billAmount.value > 0) {
         if (cashGiven.value >= billAmount.value) {
