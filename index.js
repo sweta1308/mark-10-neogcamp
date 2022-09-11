@@ -4,7 +4,7 @@ const checkBtn = document.querySelector("#check-btn");
 const message = document.querySelector("#error-message");
 const noOfNotes = document.querySelectorAll(".no-of-notes");
 
-const availableNotes = [2000, 500, 100, 20, 10, 1];
+const availableNotes = [2000, 500, 100, 20, 10, 5, 1];
 
 checkBtn.addEventListener("click", function validateBillAndCashAmount() {
     const billAmt = Number(billAmount.value);
