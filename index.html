@@ -8,32 +8,34 @@
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <div class="container">
-            <nav class="navigation">
-                <h1 class="heading">Cash Register Manager</h1>
-            </nav>
+        
+        <nav class="navigation">
+            <h1 class="heading">Cash Register Manager</h1>
+        </nav>
             
-            <p class="description">
-                You can enter the bill amount and the cash you give to the shopkeeper and then check the minimum number of notes you will receive back.
-            </p>
+        <p class="description">
+            You can enter the bill amount and the cash you give to the shopkeeper and then check the minimum number of notes you will receive back.
+        </p>
 
-            <label for="bill-amount"> Bill amount - </label>
-            <input id="bill-amount" placeholder="Enter the bill amount" type="text" />
-
+        <label for="bill-amount"> Bill amount - </label>
+        <input id="bill-amount" placeholder="Enter the bill amount" type="number" />
         
 
+        
+        <div id="cash">
             <label for="cash-given"> Cash given - </label>
-            <input id="cash-given" placeholder="Enter the cash given amount" type="text" />
+            <input id="cash-given" placeholder="Enter the cash given amount" type="number" />
 
             <button id="check-btn"> Check </button>
+        </div>
 
-            <p id="error-message"></p>
+        <p id="error-message"></p>
 
-            <table class="change-table">
-                <caption>
-                    Return Change
-                </caption>
-
+        <table class="change-table">
+            <caption>
+                Return Change
+            </caption>
+            <tbody>
                 <tr>
                     <th>Number of notes</th>
                     <td class="no-of-notes"></td>
@@ -55,8 +57,9 @@
                     <td>5</td>
                     <td>1</td>
                 </tr>
-            </table>
-        </div>
+            </tbody>
+        </table>
+        
 
         <footer class="footer">
             <div class="footer-header">connect with me</div>

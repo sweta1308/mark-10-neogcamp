@@ -41,6 +41,7 @@ input {
     height: 2rem;
     border-radius: 0.7rem;
     border-color: var(--primary-color);
+    text-align: center;
 }
 
 button {
@@ -99,6 +100,9 @@ td {
     padding: 1rem;
     text-align: center;
 }
+
+
+  
 
 
 
